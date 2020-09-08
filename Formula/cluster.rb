@@ -17,7 +17,7 @@ class Cluster < Formula
     bin.install "clusterrun.sh"
     bin.install "clusterupload.sh"
     bin.install "clusterdownload.sh"
-    bin.install "multisssh.sh"
+    bin.install "multissh.sh"
   end
 
   test do
