@@ -14,10 +14,11 @@ class Cluster < Formula
     # ENV.deparallelize  # if your formula fails when building in parallel
     # Remove unrecognized options if warned by configure
     # system "cmake", ".", *std_cmake_args
-    bin.install "clusterrun.sh"
-    bin.install "clusterupload.sh"
-    bin.install "clusterdownload.sh"
+    bin.install "clusterrun.sh" => "clusterrun"
+    bin.install "clusterupload.sh" => "clusterupload"
+    bin.install "clusterdownload.sh" => "clusterdownload.sh"
     bin.install "multissh.sh"
+    man1.install Dir["man/*"]
   end
 
   test do
