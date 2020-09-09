@@ -4,8 +4,7 @@
 class Cluster < Formula
   desc "cluster related commands"
   homepage "https://maharjansujit.com.np/projects/"
-  url "https://gist.github.com/shubhajeet/945b54a75a97dc6b39b96befdeb845bf/archive/2b7d8932a6a4a7b542f9e64388a82e5f9a262d77.zip"
-  sha256 "786784dbf30ed7c292005ccd472e6f86fb935ee4c48fcd78aa9dbc0c243d1574"
+  url "https://gist.github.com/945b54a75a97dc6b39b96befdeb845bf.git"
   version "1.0"
   license "MIT"
   head "https://gist.github.com/945b54a75a97dc6b39b96befdeb845bf.git"
