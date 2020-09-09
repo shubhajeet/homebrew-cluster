@@ -4,9 +4,11 @@
 class Cluster < Formula
   desc "cluster related commands"
   homepage "https://maharjansujit.com.np/projects/"
-  url "https://gist.github.com/shubhajeet/945b54a75a97dc6b39b96befdeb845bf/archive/ff893cd76104a60ed54949983a1a4480e3d498f4.zip"
+  url "https://gist.github.com/shubhajeet/945b54a75a97dc6b39b96befdeb845bf/archive/2b7d8932a6a4a7b542f9e64388a82e5f9a262d77.zip"
   sha256 "786784dbf30ed7c292005ccd472e6f86fb935ee4c48fcd78aa9dbc0c243d1574"
+  verion "1.0"
   license "MIT"
+  head "https://gist.github.com/945b54a75a97dc6b39b96befdeb845bf.git"
 
   # depends_on "cmake" => :build
 
@@ -17,8 +19,11 @@ class Cluster < Formula
     bin.install "clusterrun.sh" => "clusterrun"
     bin.install "clusterupload.sh" => "clusterupload"
     bin.install "clusterdownload.sh" => "clusterdownload.sh"
-    bin.install "multissh.sh"
-    man1.install Dir["man/*"]
+    bin.install "multissh.sh" => "multissh"
+    man1.install "clusterrun.1"
+    man1.install "clusterupload.1"
+    man1.install "clusterdownload.1"
+    man1.install "multissh.1"
   end
 
   test do
