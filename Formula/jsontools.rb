@@ -1,7 +1,4 @@
-# Documentation: https://docs.brew.sh/Formula-Cookbook
-#                https://rubydoc.brew.sh/Formula
-# PLEASE REMOVE ALL GENERATED COMMENTS BEFORE SUBMITTING YOUR PULL REQUEST!
-class jsontools < Formula
+class Jsontools < Formula
   include Language::Python::Virtualenv
   desc "simple python and bash script to convert the yaml, toml file to json and json to csv"
   homepage "https://maharjansujit.com.np/"
@@ -24,13 +21,6 @@ class jsontools < Formula
   # depends_on "cmake" => :build
 
   def install
-    # ENV.deparallelize  # if your formula fails when building in parallel
-    # Remove unrecognized options if warned by configure
-    # system "./configure", "--disable-debug",
-                          "--disable-dependency-tracking",
-                          "--disable-silent-rules",
-                          "--prefix=#{prefix}"
-    # system "cmake", ".", *std_cmake_args
     bin.install "jsonfilter.sh" => "jsonfilter"
     bin.install "jsontocsv.py" => "jsontocsv"
     bin.install "tomltojsonfilter.sh" => "tomltojsonfilter"
