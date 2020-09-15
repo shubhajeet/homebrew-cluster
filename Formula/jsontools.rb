@@ -25,7 +25,7 @@ class Jsontools < Formula
     bin.install "jsontocsv.py" => "jsontocsv"
     bin.install "tomltojsonfilter.sh" => "tomltojsonfilter"
     bin.install "yamltojsonfilter.sh" => "yamltojsonfilter"
-    virtualenv_install_with_resources
+    virtualenv_install_with_resources :using => "python@3.6"
   end
 
   test do
