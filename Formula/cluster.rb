@@ -17,8 +17,9 @@ class Cluster < Formula
     # system "cmake", ".", *std_cmake_args
     bin.install "clusterrun.sh" => "clusterrun"
     bin.install "clusterupload.sh" => "clusterupload"
-    bin.install "clusterdownload.sh" => "clusterdownload.sh"
+    bin.install "clusterdownload.sh" => "clusterdownload"
     bin.install "multissh.sh" => "multissh"
+    bin.install "clusterrecord.sh" => "clusterrecord"
     man1.install "clusterrun.1"
     man1.install "clusterupload.1"
     man1.install "clusterdownload.1"
