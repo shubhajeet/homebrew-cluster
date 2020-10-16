@@ -5,7 +5,7 @@ class Cluster < Formula
   desc "cluster related commands"
   homepage "https://maharjansujit.com.np/projects/"
   url "https://gist.github.com/945b54a75a97dc6b39b96befdeb845bf.git"
-  version "1.0"
+  version "1.1"
   license "MIT"
   head "https://gist.github.com/945b54a75a97dc6b39b96befdeb845bf.git"
 
@@ -16,14 +16,14 @@ class Cluster < Formula
     # Remove unrecognized options if warned by configure
     # system "cmake", ".", *std_cmake_args
     bin.install "clusterrun.sh" => "clusterrun"
-    bin.install "clusterupload.sh" => "clusterupload"
-    bin.install "clusterdownload.sh" => "clusterdownload"
-    bin.install "multissh.sh" => "multissh"
-    bin.install "clusterrecord.sh" => "clusterrecord"
     man1.install "clusterrun.1"
+    bin.install "clusterupload.sh" => "clusterupload"
     man1.install "clusterupload.1"
+    bin.install "clusterdownload.sh" => "clusterdownload"
     man1.install "clusterdownload.1"
+    bin.install "multissh.sh" => "multissh"
     man1.install "multissh.1"
+    bin.install "clusterrecord.sh" => "clusterrecord"
   end
 
   test do
