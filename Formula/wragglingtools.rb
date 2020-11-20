@@ -1,4 +1,4 @@
-class Jsontools < Formula
+class Wragglingtools < Formula
   #include Language::Python::Virtualenv
   desc "simple python and bash script to convert the yaml, toml file to json and json to csv"
   homepage "https://maharjansujit.com.np/"
